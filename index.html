@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Terms and Conditions</title>
+    <style>
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+      button,
+      hr,
+      input {
+        overflow: visible;
+      }
+      progress,
+      sub,
+      sup {
+        vertical-align: baseline;
+      }
+      [type='checkbox'],
+      [type='radio'],
+      legend {
+        box-sizing: border-box;
+        padding: 0;
+      }
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      details,
+      main {
+        display: block;
+      }
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+      hr {
+        box-sizing: content-box;
+        height: 0;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+      a {
+        background-color: transparent;
+      }
+      abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      img {
+        border-style: none;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      [type='button'],
+      [type='reset'],
+      [type='submit'],
+      button {
+        -webkit-appearance: button;
+      }
+      [type='button']::-moz-focus-inner,
+      [type='reset']::-moz-focus-inner,
+      [type='submit']::-moz-focus-inner,
+      button::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      [type='button']:-moz-focusring,
+      [type='reset']:-moz-focusring,
+      [type='submit']:-moz-focusring,
+      button:-moz-focusring {
+        outline: ButtonText dotted 1px;
+      }
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+      legend {
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        white-space: normal;
+      }
+      textarea {
+        overflow: auto;
+      }
+      [type='number']::-webkit-inner-spin-button,
+      [type='number']::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type='search'] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      [type='search']::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      [hidden],
+      template {
+        display: none;
+      }
+      .terms {
+        font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+          'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        padding: 1.5rem 0;
+        background-color: #151c24;
+        font-size: 1.2rem;
+        color: #818590;
+        line-height: 1.8rem;
+      }
+      .terms li {
+        margin-bottom: 0.5rem;
+      }
+      .terms ul li {
+        list-style-type: disc;
+      }
+      .terms__title,
+      .terms__accordions-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1rem 0;
+      }
+      .terms__accordions-title {
+        margin-bottom: 1rem;
+      }
+      .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .accordion__body {
+        height: 0;
+        opacity: 0;
+        background-color: #252c35;
+        overflow: hidden;
+        visibility: hidden;
+        -webkit-transition: height 0.5s ease-out, opacity 0.5s ease-out;
+        -o-transition: height 0.5s ease-out, opacity 0.5s ease-out;
+        transition: height 0.5s ease-out, opacity 0.5s ease-out;
+      }
+      .accordion__panel {
+        margin-bottom: 1rem;
+      }
+      .accordion__panel.active .accordion__header::before {
+        -webkit-transform: translateY(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) rotate(90deg);
+        border-color: transparent transparent transparent #fff;
+      }
+      .accordion__panel.active .accordion__header {
+        border-bottom: 1px solid #818590;
+      }
+      .accordion__panel.active .accordion__body {
+        opacity: 1;
+        padding: 1rem;
+        visibility: visible;
+      }
+      .accordion__header {
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #252c35;
+        padding: 1rem;
+        position: relative;
+      }
+      .accordion__header::before {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 17.3px;
+        border-color: transparent transparent transparent #818590;
+        right: 1.5rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .accordion__panel table,
+      .accordion__panel th,
+      .accordion__panel td {
+        text-align: center;
+        border: 1px solid #818590;
+        padding: 0.5rem;
+      }
+      .accordion__panel table {
+        border-collapse: collapse;
+      }
+      @media (max-width: 990px) {
+        .terms__title,
+        .terms__accordions-title {
+          text-align: center;
+          padding: 0.5rem 0;
+        }
+        .terms {
+          font-size: 1.1rem;
+        }
+        .terms .terms__text ol {
+          -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+        }
+        .terms .accordion__body ol {
+          -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+        }
+        .container {
+          padding: 0 25px;
+        }
+        .accordion__panel.active .accordion__body {
+          height: auto !important;
+          padding-top: 0rem;
+        }
+      }
+      @media (max-width: 990px) {
+        .terms__title,
+        .terms__accordions-title {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
+        .terms {
+          font-size: 1rem;
+          line-height: 1.4rem;
+        }
+        ul {
+          margin-top: 10px;
+          -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+        }
+      }
+      @media (max-width: 380px) {
+        .accordion__header::before {
+          right: 10px;
+          border-width: 5px 0 5px 9px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="terms">
+      <div class="container">
+        <div class="terms__inner">
+          <div class="terms__title">
+            BONUS TERMS AND CONDITIONS
+          </div>
+          <div class="terms__text">
+            <ol>
+              <li>
+                Each individual bonus offer is valid only once per household
+                (person, account, family, household address, email address, IP
+                address, debit card number or shared computer environment). If
+                multiple accounts are identified, the bonus offer will be denied
+                and if the bonus offer has been claimed BUFF.bet reserves the
+                right to reclaim any winnings and return your deposits used to
+                trigger the bonus offer."
+              </li>
+              <li>
+                Customers from Albania, Belarus, Bosnia and Herzegovina,
+                Bulgaria, Croatia, Greece, Macedonia, Montenegro, Romania,
+                Serbia, as well as duplicate accounts, will not qualify for
+                bonus offers.
+              </li>
+              <li>
+                Individual bonus offers could have varying wagering
+                requirements, each client is responsible for reading and
+                agreeing to the bonus conditions prior to using any bonus
+                promotion.
+              </li>
+              <li>
+                By accepting a bonus offer a client is deemed to have agreed to
+                all of the bonus terms and conditions of the particular bonus
+                offer claimed and the general bonus terms and conditions.
+              </li>
+              <li>
+                Any progressive winnings or mystery jackpot winnings are
+                automatically added to your cash balance and are not subject to
+                bonus terms and conditions.
+              </li>
+              <li>
+                Only one bonus can be active for the account at any given time.
+              </li>
+              <li>
+                We may offer bonuses, promotions, competitions which are
+                governed by separate terms and conditions and they must be used
+                in adherence with such terms and conditions. In the event and to
+                the extent of a conflict between the general bonus terms and the
+                specific terms and conditions, - specific terms and conditions
+                shall prevail.
+              </li>
+              <li>
+                All bonus offers promoted or awarded are for recreational
+                purposes only. BUFF.bet has a zero tolerance policy on any
+                activity which can be defined as advantage play and violate
+                bonus terms and conditions. Examples of activities deemed as
+                “Advantage play” are listed but not limited to the below:
+                <ul>
+                  <li>
+                    creating more than one account to claim multiple bonuses,
+                    multiple account strategy or proxy account strategy;
+                  </li>
+                  <li>
+                    if multiply deposits are done for claiming multiple bonuses,
+                    before original bonus wagering requirements are met;
+                  </li>
+                  <li>
+                    if bets guaranteeing a bonus win for an individual or group,
+                    regardless of the outcome are placed (so-called “safe
+                    bets”);
+                  </li>
+                  <li>
+                    if there is any suspicion of organized use of the bonus
+                    offer;
+                  </li>
+                  <li>
+                    artificially manipulating affiliate CPAs or revenue share;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                BUFF.bet reserves the right to withdraw any Promotional Offer at
+                any time, subject to the Promotional Offer having a specific
+                eligibility period. This does not affect the promotions that
+                customers have already qualified for.
+              </li>
+              <li>
+                All BUFF.bet bonus offers are intended for recreational use and
+                BUFF.bet may, in our sole discretion, limit the eligibility of
+                customers to participate in any promotions. We reserve the right
+                to withdraw the availability of any offer or all offers to any
+                customer.
+              </li>
+            </ol>
+          </div>
+
+          <div class="terms__accordions">
+            <div class="terms__accordions-title">
+              SPECIFIC TERMS AND CONDITIONS
+            </div>
+            <div class="terms__accordion">
+              <div class="accordion__panel">
+                <div class="accordion__header">GET100</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      This bonus offer can only be used for a user’s first
+                      deposit. The bonus offer cannot be used for a second or
+                      further deposits. To activate the bonus offer please enter
+                      “GET100” on the deposit page in the Bonus Code field.
+                    </li>
+                    <li>
+                      The minimum deposit for activation of the bonus offer is 5
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 10 (ten)
+                      times from the deposit plus received bonus amount.
+                    </li>
+                    <li>
+                      Only sportsbooks bets are considered to meet the wagering
+                      requirements. Casino, Live Casino or Virtual Sports bets
+                      are not considered for completing the wagering
+                      requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 100 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      To complete the wagering requirements the minimum odds of
+                      each bet should be 1.69 or higher. In case of a combo bet,
+                      each individual bet forming the combo bet should have odds
+                      1.69 or higher.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2 x Received Bonus
+                      Amount. All extra funds will be deducted from the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">GET125</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      This bonus offer can only be used for a user’s first
+                      deposit. The bonus offer cannot be used for a second or
+                      further deposits. To activate the bonus offer please enter
+                      “GET125” on the deposit page in the Bonus Code field.
+                    </li>
+                    <li>
+                      The minimum deposit for activation of the bonus offer is 5
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 10 (ten)
+                      times from the deposit plus received bonus amount.
+                    </li>
+                    <li>
+                      Only sportsbooks bets are considered to meet the wagering
+                      requirements. Casino, Live Casino or Virtual Sports bets
+                      are not considered for completing the wagering
+                      requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 125 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      To complete the wagering requirements the minimum odds of
+                      each bet should be 1.79 or higher. In case of a combo bet,
+                      each individual bet forming the combo bet should have odds
+                      1.79 or higher.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2 x Received Bonus
+                      Amount. All extra funds will be deducted from the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">GET150</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      This bonus offer can only be used for a user’s first
+                      deposit. The bonus offer cannot be used for a second or
+                      further deposits. To activate the bonus offer please enter
+                      “GET150” on the deposit page in the Bonus Code field.
+                    </li>
+                    <li>
+                      The minimum deposit for activation of the bonus offer is 5
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 10 (ten)
+                      times from the deposit plus received bonus amount.
+                    </li>
+                    <li>
+                      Only sportsbooks bets are considered to meet the wagering
+                      requirements. Casino, Live Casino or Virtual Sports bets
+                      are not considered for completing the wagering
+                      requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 150 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      To complete the wagering requirements the minimum odds of
+                      each bet should be 1.89 or higher. In case of a combo bet,
+                      each individual bet forming the combo bet should have odds
+                      1.89 or higher.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2 x Received Bonus
+                      Amount. All extra funds will be deducted from the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">FREESHOT</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      This bonus offer can only be used for a user’s first
+                      deposit. The bonus offer cannot be used for a second or
+                      further deposits. To activate the bonus offer please enter
+                      “FREESHOT” on the deposit page in the Bonus Code field.
+                    </li>
+                    <li>
+                      The minimum deposit for activation of the bonus offer is 5
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      To activate the freeshot bonus the user needs to place
+                      their first bet on odds above 1.69 and if the bet is lost,
+                      the bet is refunded as bonus money up to €25 and is
+                      subject to wagering requirements as stated below. If,
+                      however, the bet wins, then no bonus is awarded and the
+                      player can continue betting without any bonus wagering
+                      requirements.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 5 (five)
+                      times from the deposit plus received bonus amount.
+                    </li>
+                    <li>
+                      Only sportsbooks bets are considered to meet the wagering
+                      requirements. Casino, Live Casino or Virtual Sports bets
+                      are not considered for completing the wagering
+                      requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 25 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      To complete the wagering requirements the minimum odds of
+                      each bet should be 1.69 or higher. In case of a combo bet,
+                      each individual bet forming the combo bet should have odds
+                      1.69 or higher.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2 x Received Bonus
+                      Amount. All extra funds will be deducted from the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">ACCA BONUS</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      Bonus offer applies only to pre-match combo bets with 5
+                      (five) or more selections. The bonus offer is available
+                      for all eligible customers according to the General Bonus
+                      Terms and Conditions.
+                    </li>
+                    <li>
+                      The minimum odds for each selection must be over 1.50.
+                    </li>
+                    <li>
+                      The bonus percentage amount depends on the amount of
+                      selections in the combo bet and is the following:
+                    </li>
+                    <li>
+                      <table>
+                        <tr>
+                          <td>Bet Type</td>
+                          <td>Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>5-folds</td>
+                          <td>5% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>6-folds</td>
+                          <td>10% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>7-folds</td>
+                          <td>15% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>8-folds</td>
+                          <td>20% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>9-folds</td>
+                          <td>30% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>10-folds</td>
+                          <td>40% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>11-folds</td>
+                          <td>50% Bonus</td>
+                        </tr>
+                        <tr>
+                          <td>12-folds</td>
+                          <td>60% Bonus</td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li>
+                      Bonus amount is calculated by following formula: Bonus
+                      Amount = Possible Winning Amount x Bonus percentage.
+                    </li>
+                    <li>
+                      Bonus amount is credited only on settled combo bets with
+                      status - “Win”.
+                    </li>
+                    <li>
+                      If any selections are postponed/void then the bonus will
+                      still apply, but the percentage bonus added will reflect
+                      the actual number of winning selections. The ACCA bonus is
+                      added directly to your balance as part of your winnings
+                      upon winning the combo bet, as it was calculated during
+                      the combo bet selection in the betslip.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">Mystery Jackpot</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      Bonus offer is paid out randomly on any sportsbook bet
+                      placed on the website.
+                    </li>
+                    <li>
+                      The bonus offer payout is determined by Random Number
+                      Generator and has the maximum and minimum payout for each
+                      tier. You can find the detailed information below:
+                      <ul>
+                        <li>Silver Mystery - 50 EUR - 250 EUR</li>
+                        <li>Gold Mystery - 500 EUR - 2 500 EUR</li>
+                        <li>Platinum Mystery - 15 000 EUR - 50 000 EUR</li>
+                      </ul>
+                    </li>
+                    <li>
+                      If the account currency is not EUR, the potential winning
+                      amount will be credited in your account currency.
+                    </li>
+
+                    <li>
+                      The mystery jackpot payout is directly added to your
+                      balance and is considered as winnings and not subject to
+                      bonus terms and conditions.
+                    </li>
+                    <li>
+                      Detailed information about tiers, list of winners and FAQ
+                      about the promotion can be found here.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">CASINO FIRST DEPOSIT BONUS</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      Bonus offer can be used only for a first deposit. You
+                      cannot use the bonus code for second or further deposit.
+                      To activate the bonus code enter “WELCOME1000” on the
+                      deposit page in the Bonus Code field.
+                    </li>
+                    <li>
+                      Minimum deposit for activation of the bonus offer is 20
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 40 (forty)
+                      times from the deposit and received bonus amount.
+                    </li>
+
+                    <li>
+                      Only play in casino slot games is considered to meet the
+                      wagering requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 500 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      This bonus is available in all slot games.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2xReceived Bonus
+                      Amount. All extra funds will be deducted for the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">CASINO SECOND DEPOSIT BONUS</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      Bonus offer can be used only for a second deposit. You
+                      cannot use the bonus code for third or further deposit. To
+                      activate the bonus code enter “RELOAD1000” on the deposit
+                      page in the Bonus Code field.
+                    </li>
+                    <li>
+                      Minimum deposit for activation of the bonus offer is 20
+                      EUR or equivalent amount in another currency.
+                    </li>
+                    <li>
+                      Wagering requirements for the bonus offer is 40 (forty)
+                      times from the deposit and received bonus amount.
+                    </li>
+
+                    <li>
+                      Only play in casino slot games are considered to meet the
+                      wagering requirements.
+                    </li>
+                    <li>
+                      Maximum bonus amount that can be reached by the current
+                      bonus offer is 500 EUR or the equivalent amount in another
+                      currency.
+                    </li>
+                    <li>
+                      This bonus is available in all slot games.
+                    </li>
+                    <li>
+                      The maximum withdrawal amount after completing all Terms
+                      of the bonus offer is: Deposit Amount + 2xReceived Bonus
+                      Amount. All extra funds will be deducted for the account
+                      after completing the wagering requirements.
+                    </li>
+                    <li>
+                      Bonus offer expires in 30 days from the activation date.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">REWARD CLUB</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      All eligible BUFF.bet customers can participate in the
+                      competition.
+                    </li>
+                    <li>
+                      The competition is valid from July 1, 2020 – July 31,
+                      2020.
+                    </li>
+                    <li>
+                      Competition is held only for certain disciplines in
+                      Sportsbook and casino providers in the Casino section.
+                    </li>
+
+                    <li>
+                      Current standings and the list of Sportsbook disciplines,
+                      and casino providers which are active for the competition
+                      can be found on the Leaderboard Page.
+                    </li>
+                    <li>
+                      For Sportsbook competition only single pre match and live
+                      bets on certain disciplines during the event day (from
+                      0:00 to 23:59 GMT) are considered. The minimum stake
+                      amount for the participation should be not less than 1 EUR
+                      or equivalent in another currency.
+                    </li>
+                    <li>
+                      For Casino competition all play during the event day (from
+                      0:00 to 23:59 GMT) in certain casino providers is
+                      considered. For the Casino competition there are no
+                      minimum requirements on the stake amount, only ones that
+                      apply according to the casino game rules.
+                    </li>
+                    <li>
+                      The leaderboard will be updated weekly on the first
+                      working day of the week before 15:00 GMT.
+                    </li>
+                    <li>
+                      The prize pool for the competition is divided into two
+                      parts and has the following details:
+                      <ol>
+                        <li>1. Player 1 – 150 points (50%) – gets 250 euro</li>
+                        <li>2. Player 2 – 25 points (25%) – gets 125 euro</li>
+                        <li>3. Player 3 – 15 points (15%) – gets 75 euro</li>
+                        <li>4. Player 4 – 10 points (10%) – gets 50 euro</li>
+                      </ol>
+                      Total prize pool: 500 EUR (100%)
+                    </li>
+                    <li>
+                      For Sportsbook category earned points will be calculated
+                      by next formula: Point = (Odd-1)*Stake.
+                      <div>EXAMPLE FOR 1 SINGLE BET:</div>
+                      <div>
+                        You placed a bet for 10 EUR with 2.34 odd | Points =
+                        (2.34-1)*10= 14.
+                      </div>
+                    </li>
+                    <li>
+                      For Casino category earned points will be calculated by
+                      next formula: 1 Spin = 1 Point
+                    </li>
+                    <li>
+                      All winnings in the Reward Club will be rounded in a way
+                      that the amounts are multiple of 10.
+                    </li>
+                    <li>
+                      The prize money can be credited to the account through
+                      activating the special codes that are sent to the winner
+                      e-mails after the official announcement of the competition
+                      winners on the Leaderboard page. To activate the codes
+                      please contact the customer support team in Live-chat or
+                      e-mail.
+                    </li>
+                    <li>
+                      Prize money is considered as a deposit and wagering
+                      requirements apply according to the General Terms and
+                      Conditions before proceeding with the withdrawal.
+                    </li>
+                    <li>
+                      BUFF.bet reserves the right to change the prize pool,
+                      terms and conditions before the start of the new
+                      competitions.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__header">HAPPY HOUR</div>
+                <div class="accordion__body">
+                  <ol>
+                    <li>
+                      1. The bonus promotion apply to all eligible customer of
+                      BUFF.bet
+                    </li>
+                    <li>
+                      2. The happy hour promotion codes will be sent regularly
+                      to BUFF.bet’s email, sms and push notification
+                      subscribers.
+                    </li>
+                    <li>
+                      3. During the bonus promotion each user is eligible to
+                      take only 1 (one) bonus code per day.
+                    </li>
+
+                    <li>
+                      4. Terms and conditions of each bonus will be sent in the
+                      promotion and are also listed below:
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/main.js"></script> -->
+    <script>
+      function initAccordion(accordionElem) {
+        function handlePanelClick(event) {
+          showPanel(event.currentTarget);
+        }
+
+        function showPanel(panelHeader) {
+          let isActive,
+            panel = panelHeader.parentNode,
+            panelBody = panelHeader.nextElementSibling,
+            expandedPanel = document.querySelector('.accordion__panel.active');
+
+          isActive =
+            expandedPanel && panel.classList.contains('active') ? true : false;
+
+          if (expandedPanel) {
+            expandedPanel.querySelector('.accordion__body').style.height = null;
+            expandedPanel.classList.remove('active');
+          }
+
+          if (panel && !isActive) {
+            panelBody.style.height = panelBody.scrollHeight + 'px';
+            panel.classList.add('active');
+          }
+        }
+
+        let allPanelElements = document.querySelectorAll('.accordion__panel');
+
+        for (let i = 0; i < allPanelElements.length; i++) {
+          allPanelElements[i]
+            .querySelector('.accordion__header')
+            .addEventListener('click', handlePanelClick);
+        }
+
+        showPanel(allPanelElements);
+      }
+
+      initAccordion(document.getElementsByClassName('accordion'));
+    </script>
+  </body>
+</html>
